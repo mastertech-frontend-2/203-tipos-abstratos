@@ -62,3 +62,23 @@ let garrafa = {
 
 //Acessa a chave 'cor' dentro da chave 'tampa' do objeto garrafa
 garrafa.tampa.cor = 'laranja';
+
+let joaozinho = {
+    nome: 'João',
+    sobrenome: 'Silva',
+    idade: 25
+}
+
+let mariazinha = {
+    nome: 'Maria',
+    sobrenome: 'de la Cuesta',
+    idade: 22
+}
+
+//Nas duas linhas de baixo, as chaves namorada e namorado fazem referência a outra variável
+joaozinho.namorada = mariazinha;
+mariazinha.namorado = joaozinho;
+
+joaozinho.namorada.namorado.namorada.namorado.namorada.sobrenome;
+
+mariazinha.namorado = undefined; // Apaga a referência do namorado de mariazinha, mas não apaga o conteúdo da variável joaozinho

@@ -35,7 +35,7 @@ let cadastro = {
 }
 
 cadastro; //Acessa o objeto
-cadastro['nome']; //Acessar valor de uma chave de um objeto
+cadastro['nome']; //Acessar valor da chave 'nome' do objeto
 
 //Criar uma nova chave em um objeto
 cadastro['telefone'] = '99999-9999';
@@ -43,3 +43,22 @@ cadastro['telefone'] = '99999-9999';
 //Apaga uma chave de um objeto
 delete cadastro['telefone'];
 
+cadastro.nome; //Acessa valor da chave 'nome' do objeto
+
+//Criar uma nova chave e um objeto
+cadastro.residencia = 'Avenida Paulista';
+
+//É possível colocar objetos dentro de outros objetos
+let garrafa = {
+    volume: 500,
+    material: 'plastico barato',
+    dono: 'eu',
+    tampa: {
+        aberta: false,
+        cor: 'azul',
+        tipo: 'rosca'
+    }
+}
+
+//Acessa a chave 'cor' dentro da chave 'tampa' do objeto garrafa
+garrafa.tampa.cor = 'laranja';

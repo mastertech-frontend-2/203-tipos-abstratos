@@ -82,3 +82,7 @@ mariazinha.namorado = joaozinho;
 joaozinho.namorada.namorado.namorada.namorado.namorada.sobrenome;
 
 mariazinha.namorado = undefined; // Apaga a referência do namorado de mariazinha, mas não apaga o conteúdo da variável joaozinho
+
+let listaInfinita = [1, 2, 3, 4];
+listaInfinita.push(listaInfinita);
+listaInfinita[4]; //O indice 4 da lista infinita faz uma referência a ela mesma 
